@@ -25,22 +25,22 @@ body, * {
 .profile-picture  img {
     background-color: #d94e46;
     border-radius: 250px;
-    width: 250px;
-    height: 250px;
+    width: 50%;
+    aspect-ratio: 1;
     object-fit: cover;
     object-position: top;
 }
 .profile-name {
     color: #FFFFFF;
     text-align: center;
-    font-size: 24px;
+    font-size: 1.5rem;
     margin-top: 30px;
     font-weight: bold;
 }
 .profile-job {
     color: #FFFFFF;
     text-align: center;
-    font-size: 18px;
+    font-size: 1rem;
     margin-top: 10px;
 }
 .right {
