@@ -14,9 +14,10 @@ body, * {
 }
 .left {
     background-color: #FF6961;
+    display: grid;
+    place-items: center;
 }
 .profile-picture {
-    margin-top: 50px;
     height: fit-content;
     /* background-color: #000; */
     display: grid;
@@ -24,7 +25,7 @@ body, * {
 }
 .profile-picture  img {
     background-color: #d94e46;
-    border-radius: 250px;
+    border-radius: 100%;
     width: 50%;
     aspect-ratio: 1;
     object-fit: cover;
@@ -34,7 +35,7 @@ body, * {
     color: #FFFFFF;
     text-align: center;
     font-size: 1.5rem;
-    margin-top: 30px;
+    margin-top: 1.5rem;
     font-weight: bold;
 }
 .profile-job {
@@ -46,4 +47,24 @@ body, * {
 .right {
     overflow-y: scroll;
     object-position: 100px 10%;
+    padding: 3rem;
+}
+.introduction-title {
+    font-size: 1.5rem;
+    font-weight: bold;
+    color: #d94e46;
+    margin-bottom: 0.5rem;
+}
+.introduction-content {
+    font-size: 1rem;
+    line-height: 1.5rem;
+}
+@media (max-width: 900px) {
+    .wrapper {
+        width: 100vw;
+        height: 100vh;
+        overflow: hidden;
+        display: grid;
+        grid-template-columns: 1fr;
+    }
 }
