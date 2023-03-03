@@ -21,6 +21,7 @@ body, * {
     height: fit-content;
     /* background-color: #000; */
     display: grid;
+    overflow: hidden;
     place-items: center;
 }
 .profile-picture  img {
@@ -30,6 +31,7 @@ body, * {
     aspect-ratio: 1;
     object-fit: cover;
     object-position: top;
+    cursor: pointer;
 }
 .profile-name {
     color: #FFFFFF;
