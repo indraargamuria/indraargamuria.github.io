@@ -1,0 +1,866 @@
+---
+const tiles = [
+	{
+		id: 'hero',
+		size: 'col-span-2 row-span-2',
+		delay: 0,
+	},
+	{
+		id: 'epicor',
+		size: 'col-span-2 row-span-1',
+		delay: 100,
+	},
+	{
+		id: 'opexio',
+		size: 'col-span-1 row-span-2',
+		delay: 200,
+	},
+	{
+		id: 'winrate',
+		size: 'col-span-1 row-span-1',
+		delay: 300,
+	},
+	{
+		id: 'techstack',
+		size: 'col-span-1 row-span-1',
+		delay: 400,
+	},
+	{
+		id: 'future',
+		size: 'col-span-1 row-span-1',
+		delay: 500,
+	},
+	{
+		id: 'connect',
+		size: 'col-span-1 row-span-1',
+		delay: 600,
+	},
+];
+
+const experienceYears = 7;
+---
+
+<div class="bento-container">
+	<div class="bento-grid">
+		<!-- Hero Tile -->
+		<div class="bento-tile hero-tile {tiles[0].size}" style="animation-delay: {tiles[0].delay}ms">
+			<div class="tile-content">
+				<div class="hero-header">
+					<div class="avatar-badge">
+						<span class="avatar-initials">IA</span>
+					</div>
+					<div class="hero-meta">
+						<span class="status-dot"></span>
+						<span class="status-text">Available</span>
+					</div>
+				</div>
+				<div class="hero-body">
+					<h1 class="hero-title">
+						<span class="title-primary">Indra Arga</span>
+						<span class="title-secondary">Muria</span>
+					</h1>
+					<h2 class="hero-subtitle">
+						<span class="accent-line"></span>
+						Senior Epicor Technical Architect
+					</h2>
+					<div class="hero-tags">
+						<span class="tag">Enterprise Systems</span>
+						<span class="tag">Technical Leadership</span>
+						<span class="tag">SaaS Architecture</span>
+					</div>
+				</div>
+			</div>
+		</div>
+
+		<!-- Epicor Expertise Tile -->
+		<div class="bento-tile epicor-tile {tiles[1].size}" style="animation-delay: {tiles[1].delay}ms">
+			<div class="tile-content">
+				<div class="expertise-header">
+					<div class="expertise-icon">
+						<svg width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5">
+							<polygon points="12 2 2 7 12 12 22 7 12 2"></polygon>
+							<polyline points="2 17 12 22 22 17"></polyline>
+							<polyline points="2 12 12 17 22 12"></polyline>
+						</svg>
+					</div>
+					<div class="expertise-badge">
+						<span class="badge-text">Deep Epicor</span>
+						<span class="badge-level">Expert</span>
+					</div>
+				</div>
+				<div class="expertise-body">
+					<div class="years-display">
+						<span class="years-number">{experienceYears}</span>
+						<span class="years-label">Years</span>
+					</div>
+					<div class="expertise-skills">
+						<div class="skill-item">
+							<span class="skill-name">Advanced BPM Engineering</span>
+							<span class="skill-bar"></span>
+						</div>
+						<div class="skill-item">
+							<span class="skill-name">BAQ & Data Architecture</span>
+							<span class="skill-bar"></span>
+						</div>
+						<div class="skill-item">
+							<span class="skill-name">Manufacturing Logic</span>
+							<span class="skill-bar"></span>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+
+		<!-- OpexIO Tile -->
+		<div class="bento-tile opexio-tile {tiles[2].size}" style="animation-delay: {tiles[2].delay}ms">
+			<div class="tile-content">
+				<div class="project-header">
+					<div class="project-logo">
+						<span class="logo-text">Opex</span>
+						<span class="logo-accent">IO</span>
+					</div>
+					<span class="project-badge">SaaS</span>
+				</div>
+				<div class="project-body">
+					<h3 class="project-title">Digital Supply Chain</h3>
+					<p class="project-description">
+						End-to-end compliance and tracking solution.
+					</p>
+					<div class="project-features">
+						<div class="feature-item">
+							<svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+								<rect x="3" y="3" width="7" height="7"></rect>
+								<rect x="14" y="3" width="7" height="7"></rect>
+								<rect x="14" y="14" width="7" height="7"></rect>
+								<path d="M10 6.5h4"></path>
+								<path d="M6.5 10v4"></path>
+							</svg>
+							<span>QR Lifecycle</span>
+						</div>
+						<div class="feature-item">
+							<svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+								<path d="M14 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V8z"></path>
+								<polyline points="14 2 14 8 20 8"></polyline>
+							</svg>
+							<span>eMeterai Integration</span>
+						</div>
+						<div class="feature-item">
+							<svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+								<polyline points="22 12 18 12 15 21 9 3 6 12 2 12"></polyline>
+							</svg>
+							<span>Compliance Tracking</span>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+
+		<!-- winrate-ibadah Tile -->
+		<div class="bento-tile winrate-tile {tiles[3].size}" style="animation-delay: {tiles[3].delay}ms">
+			<div class="tile-content">
+				<div class="project-header">
+					<div class="project-logo small">
+						<span class="logo-text">winrate</span>
+					</div>
+					<span class="project-badge">Tool</span>
+				</div>
+				<div class="project-body compact">
+					<h3 class="project-title">Spiritual Accountability</h3>
+					<p class="project-description">
+						Productivity tool for tracking ibadah.
+					</p>
+				</div>
+			</div>
+		</div>
+
+		<!-- Tech Stack Tile -->
+		<div class="bento-tile techstack-tile {tiles[4].size}" style="animation-delay: {tiles[4].delay}ms">
+			<div class="tile-content">
+				<h3 class="stack-title">Tech Stack</h3>
+				<div class="stack-icons">
+					<div class="stack-icon" title="Astro">
+						<svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5">
+							<polygon points="12 2 2 7 12 12 22 7 12 2"></polygon>
+							<polyline points="2 17 12 22 22 17"></polyline>
+							<polyline points="2 12 12 17 22 12"></polyline>
+						</svg>
+						<span>Astro</span>
+					</div>
+					<div class="stack-icon" title="Hono">
+						<svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5">
+							<circle cx="12" cy="12" r="10"></circle>
+							<path d="M8 12l2 2 4-4"></path>
+						</svg>
+						<span>Hono</span>
+					</div>
+					<div class="stack-icon" title="Cloudflare">
+						<svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5">
+							<path d="M17.5 19c0-3.037-2.463-5.5-5.5-5.5S6.5 15.963 6.5 19"></path>
+							<circle cx="12" cy="7" r="4"></circle>
+						</svg>
+						<span>Cloudflare</span>
+					</div>
+				</div>
+			</div>
+		</div>
+
+		<!-- Future Slot Tile -->
+		<div class="bento-tile future-tile {tiles[5].size}" style="animation-delay: {tiles[5].delay}ms">
+			<div class="tile-content">
+				<div class="future-content">
+					<div class="dots-loader">
+						<span></span>
+						<span></span>
+						<span></span>
+					</div>
+					<p class="future-text">Building the next<br>big thing...</p>
+				</div>
+			</div>
+		</div>
+
+		<!-- Connect Tile -->
+		<div class="bento-tile connect-tile {tiles[6].size}" style="animation-delay: {tiles[6].delay}ms">
+			<div class="tile-content">
+				<h3 class="connect-title">Connect</h3>
+				<div class="connect-links">
+					<a href="https://linkedin.com" target="_blank" rel="noopener noreferrer" class="connect-link">
+						<svg width="16" height="16" viewBox="0 0 24 24" fill="currentColor">
+							<path d="M20.447 20.452h-3.554v-5.569c0-1.328-.027-3.037-1.852-3.037-1.853 0-2.136 1.445-2.136 2.939v5.667H9.351V9h3.414v1.561h.046c.477-.9 1.637-1.85 3.37-1.85 3.601 0 4.267 2.37 4.267 5.455v6.286zM5.337 7.433c-1.144 0-2.063-.926-2.063-2.065 0-1.138.92-2.063 2.063-2.063 1.14 0 2.064.925 2.064 2.063 0 1.139-.925 2.065-2.064 2.065zm1.782 13.019H3.555V9h3.564v11.452zM22.225 0H1.771C.792 0 0 .774 0 1.729v20.542C0 23.227.792 24 1.771 24h20.451C23.2 24 24 23.227 24 22.271V1.729C24 .774 23.2 0 22.222 0h.003z"/>
+						</svg>
+						<span>LinkedIn</span>
+					</a>
+					<a href="https://github.com" target="_blank" rel="noopener noreferrer" class="connect-link">
+						<svg width="16" height="16" viewBox="0 0 24 24" fill="currentColor">
+							<path d="M12 0c-6.626 0-12 5.373-12 12 0 5.302 3.438 9.8 8.207 11.387.599.111.793-.261.793-.577v-2.234c-3.338.726-4.033-1.416-4.033-1.416-.546-1.387-1.333-1.756-1.333-1.756-1.089-.745.083-.729.083-.729 1.205.084 1.839 1.237 1.839 1.237 1.07 1.834 2.807 1.304 3.492.997.107-.775.418-1.305.762-1.604-2.665-.305-5.467-1.334-5.467-5.931 0-1.311.469-2.381 1.236-3.221-.124-.303-.535-1.524.117-3.176 0 0 1.008-.322 3.301 1.23.957-.266 1.983-.399 3.003-.404 1.02.005 2.047.138 3.006.404 2.291-1.552 3.297-1.23 3.297-1.23.653 1.653.242 2.874.118 3.176.77.84 1.235 1.911 1.235 3.221 0 4.609-2.807 5.624-5.479 5.921.43.372.823 1.102.823 2.222v3.293c0 .319.192.694.801.576 4.765-1.589 8.199-6.086 8.199-11.386 0-6.627-5.373-12-12-12z"/>
+						</svg>
+						<span>GitHub</span>
+					</a>
+					<a href="mailto:contact@argamuria.dev" class="connect-link">
+						<svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+							<path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"></path>
+							<polyline points="22,6 12,13 2,6"></polyline>
+						</svg>
+						<span>Email</span>
+					</a>
+				</div>
+			</div>
+		</div>
+	</div>
+</div>
+
+<style>
+	.bento-container {
+		position: relative;
+		z-index: 1;
+		padding: 1.5rem;
+		height: 100vh;
+		max-height: 100vh;
+		overflow: hidden;
+	}
+
+	.bento-grid {
+		display: grid;
+		grid-template-columns: repeat(4, 1fr);
+		grid-template-rows: repeat(2, 1fr);
+		gap: 0.875rem;
+		height: 100%;
+	}
+
+	/* Base Tile Styles */
+	.bento-tile {
+		background: linear-gradient(135deg, rgba(26, 26, 26, 0.95) 0%, rgba(18, 18, 18, 0.98) 100%);
+		border: 1px solid rgba(212, 165, 116, 0.1);
+		border-radius: 0.875rem;
+		padding: 1rem;
+		position: relative;
+		overflow: hidden;
+		animation: slideUp 0.6s ease-out forwards;
+		opacity: 0;
+		transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+	}
+
+	.bento-tile::before {
+		content: '';
+		position: absolute;
+		top: 0;
+		left: 0;
+		right: 0;
+		bottom: 0;
+		background: linear-gradient(135deg, rgba(212, 165, 116, 0.05) 0%, transparent 50%);
+		opacity: 0;
+		transition: opacity 0.3s ease;
+		pointer-events: none;
+	}
+
+	.bento-tile:hover {
+		transform: translateY(-2px);
+		border-color: rgba(212, 165, 116, 0.3);
+		box-shadow: 0 12px 24px rgba(0, 0, 0, 0.3), 0 0 0 1px rgba(212, 165, 116, 0.1);
+	}
+
+	.bento-tile:hover::before {
+		opacity: 1;
+	}
+
+	/* Tile Content */
+	.tile-content {
+		height: 100%;
+		display: flex;
+		flex-direction: column;
+		position: relative;
+		z-index: 1;
+	}
+
+	/* ====================
+	   Hero Tile
+	   ==================== */
+	.hero-tile {
+		background: linear-gradient(145deg, rgba(26, 26, 26, 0.98) 0%, rgba(15, 15, 15, 1) 100%);
+	}
+
+	.hero-header {
+		display: flex;
+		justify-content: space-between;
+		align-items: center;
+		margin-bottom: 1rem;
+	}
+
+	.avatar-badge {
+		width: 48px;
+		height: 48px;
+		border-radius: 12px;
+		background: linear-gradient(135deg, #d4a574 0%, #c49464 100%);
+		display: flex;
+		align-items: center;
+		justify-content: center;
+		font-family: 'JetBrains Mono', monospace;
+		font-size: 1.1rem;
+		font-weight: 600;
+		color: #0a0a0a;
+		box-shadow: 0 4px 16px rgba(212, 165, 116, 0.25);
+	}
+
+	.hero-meta {
+		display: flex;
+		align-items: center;
+		gap: 0.375rem;
+		padding: 0.375rem 0.75rem;
+		background: rgba(212, 165, 116, 0.1);
+		border-radius: 999px;
+		border: 1px solid rgba(212, 165, 116, 0.2);
+	}
+
+	.status-dot {
+		width: 6px;
+		height: 6px;
+		background: #4ade80;
+		border-radius: 50%;
+		animation: pulse 2s ease-in-out infinite;
+	}
+
+	@keyframes pulse {
+		0%, 100% { opacity: 1; }
+		50% { opacity: 0.5; }
+	}
+
+	.status-text {
+		font-family: 'JetBrains Mono', monospace;
+		font-size: 0.65rem;
+		color: #4ade80;
+	}
+
+	.hero-body {
+		display: flex;
+		flex-direction: column;
+		gap: 0.625rem;
+		flex: 1;
+	}
+
+	.hero-title {
+		display: flex;
+		flex-direction: column;
+		line-height: 1.05;
+	}
+
+	.title-primary {
+		font-size: 2.25rem;
+		font-weight: 700;
+		background: linear-gradient(135deg, #ffffff 0%, #e5e5e5 100%);
+		-webkit-background-clip: text;
+		-webkit-text-fill-color: transparent;
+		background-clip: text;
+	}
+
+	.title-secondary {
+		font-size: 2.25rem;
+		font-weight: 700;
+		background: linear-gradient(135deg, #d4a574 0%, #e6b88a 100%);
+		-webkit-background-clip: text;
+		-webkit-text-fill-color: transparent;
+		background-clip: text;
+	}
+
+	.hero-subtitle {
+		display: flex;
+		align-items: center;
+		gap: 0.625rem;
+		font-size: 0.9rem;
+		font-weight: 500;
+		color: #ffffff;
+	}
+
+	.accent-line {
+		width: 28px;
+		height: 2px;
+		background: linear-gradient(90deg, #d4a574 0%, #e6b88a 100%);
+		border-radius: 2px;
+	}
+
+	.hero-tags {
+		display: flex;
+		gap: 0.5rem;
+		flex-wrap: wrap;
+		margin-top: auto;
+	}
+
+	.tag {
+		padding: 0.375rem 0.75rem;
+		background: rgba(212, 165, 116, 0.1);
+		border: 1px solid rgba(212, 165, 116, 0.2);
+		border-radius: 6px;
+		font-family: 'JetBrains Mono', monospace;
+		font-size: 0.65rem;
+		color: #d4a574;
+	}
+
+	/* ====================
+	   Epicor Tile
+	   ==================== */
+	.epicor-tile {
+		background: linear-gradient(145deg, rgba(212, 165, 116, 0.08) 0%, rgba(18, 18, 18, 0.98) 100%);
+	}
+
+	.expertise-header {
+		display: flex;
+		justify-content: space-between;
+		align-items: start;
+		margin-bottom: 0.875rem;
+	}
+
+	.expertise-icon {
+		width: 36px;
+		height: 36px;
+		border-radius: 8px;
+		background: rgba(212, 165, 116, 0.15);
+		border: 1px solid rgba(212, 165, 116, 0.3);
+		display: flex;
+		align-items: center;
+		justify-content: center;
+		color: #d4a574;
+	}
+
+	.expertise-badge {
+		display: flex;
+		flex-direction: column;
+		align-items: end;
+		gap: 0.125rem;
+	}
+
+	.badge-text {
+		font-family: 'JetBrains Mono', monospace;
+		font-size: 0.55rem;
+		font-weight: 600;
+		color: #d4a574;
+		letter-spacing: 0.1em;
+		text-transform: uppercase;
+	}
+
+	.badge-level {
+		font-size: 0.6rem;
+		color: #ffffff;
+		background: linear-gradient(135deg, #d4a574 0%, #c49464 100%);
+		padding: 0.125rem 0.5rem;
+		border-radius: 3px;
+		font-weight: 600;
+	}
+
+	.expertise-body {
+		display: flex;
+		gap: 1.25rem;
+		flex: 1;
+	}
+
+	.years-display {
+		display: flex;
+		flex-direction: column;
+		align-items: center;
+		justify-content: center;
+		min-width: 80px;
+	}
+
+	.years-number {
+		font-size: 2.5rem;
+		font-weight: 700;
+		line-height: 1;
+		background: linear-gradient(135deg, #d4a574 0%, #e6b88a 100%);
+		-webkit-background-clip: text;
+		-webkit-text-fill-color: transparent;
+		background-clip: text;
+	}
+
+	.years-label {
+		font-family: 'JetBrains Mono', monospace;
+		font-size: 0.55rem;
+		color: #a3a3a3;
+		text-transform: uppercase;
+		letter-spacing: 0.05em;
+	}
+
+	.expertise-skills {
+		flex: 1;
+		display: flex;
+		flex-direction: column;
+		gap: 0.625rem;
+	}
+
+	.skill-item {
+		display: flex;
+		flex-direction: column;
+		gap: 0.125rem;
+	}
+
+	.skill-name {
+		font-size: 0.7rem;
+		color: #e5e5e5;
+	}
+
+	.skill-bar {
+		height: 2px;
+		background: rgba(212, 165, 116, 0.2);
+		border-radius: 1px;
+		overflow: hidden;
+		position: relative;
+	}
+
+	.skill-bar::after {
+		content: '';
+		position: absolute;
+		top: 0;
+		left: 0;
+		height: 100%;
+		width: var(--skill-level, 85%);
+		background: linear-gradient(90deg, #d4a574 0%, #e6b88a 100%);
+		border-radius: 1px;
+	}
+
+	/* ====================
+	   OpexIO Tile
+	   ==================== */
+	.opexio-tile {
+		background: linear-gradient(145deg, rgba(30, 41, 59, 0.95) 0%, rgba(18, 18, 18, 0.98) 100%);
+	}
+
+	.project-header {
+		display: flex;
+		justify-content: space-between;
+		align-items: start;
+		margin-bottom: 0.75rem;
+	}
+
+	.project-logo {
+		display: flex;
+	}
+
+	.logo-text {
+		font-family: 'JetBrains Mono', monospace;
+		font-size: 0.95rem;
+		font-weight: 600;
+		color: #ffffff;
+	}
+
+	.logo-accent {
+		font-family: 'JetBrains Mono', monospace;
+		font-size: 0.95rem;
+		font-weight: 600;
+		background: linear-gradient(135deg, #3b82f6 0%, #60a5fa 100%);
+		-webkit-background-clip: text;
+		-webkit-text-fill-color: transparent;
+		background-clip: text;
+	}
+
+	.project-logo.small .logo-text {
+		font-size: 0.75rem;
+	}
+
+	.project-badge {
+		padding: 0.25rem 0.5rem;
+		background: rgba(59, 130, 246, 0.15);
+		border: 1px solid rgba(59, 130, 246, 0.3);
+		border-radius: 4px;
+		font-family: 'JetBrains Mono', monospace;
+		font-size: 0.55rem;
+		color: #60a5fa;
+		font-weight: 600;
+		text-transform: uppercase;
+		letter-spacing: 0.05em;
+	}
+
+	.project-body {
+		flex: 1;
+		display: flex;
+		flex-direction: column;
+		gap: 0.5rem;
+	}
+
+	.project-body.compact {
+		justify-content: center;
+	}
+
+	.project-title {
+		font-size: 1rem;
+		font-weight: 600;
+		color: #ffffff;
+		line-height: 1.3;
+	}
+
+	.project-description {
+		font-size: 0.75rem;
+		line-height: 1.5;
+		color: #a3a3a3;
+	}
+
+	.project-features {
+		display: flex;
+		flex-direction: column;
+		gap: 0.5rem;
+		margin-top: auto;
+	}
+
+	.feature-item {
+		display: flex;
+		align-items: center;
+		gap: 0.5rem;
+		font-size: 0.7rem;
+		color: #e5e5e5;
+	}
+
+	.feature-item svg {
+		color: #60a5fa;
+		flex-shrink: 0;
+	}
+
+	/* ====================
+	   winrate Tile
+	   ==================== */
+	.winrate-tile {
+		background: linear-gradient(145deg, rgba(30, 58, 48, 0.95) 0%, rgba(18, 18, 18, 0.98) 100%);
+	}
+
+	.winrate-tile .project-badge {
+		background: rgba(74, 222, 128, 0.15);
+		border-color: rgba(74, 222, 128, 0.3);
+		color: #4ade80;
+	}
+
+	/* ====================
+	   Tech Stack Tile
+	   ==================== */
+	.stack-title {
+		font-size: 0.85rem;
+		font-weight: 600;
+		color: #ffffff;
+		margin-bottom: 0.75rem;
+	}
+
+	.stack-icons {
+		display: flex;
+		flex-direction: column;
+		gap: 0.5rem;
+	}
+
+	.stack-icon {
+		display: flex;
+		align-items: center;
+		gap: 0.5rem;
+		padding: 0.5rem;
+		background: rgba(212, 165, 116, 0.05);
+		border: 1px solid rgba(212, 165, 116, 0.1);
+		border-radius: 6px;
+		color: #e5e5e5;
+		font-family: 'JetBrains Mono', monospace;
+		font-size: 0.65rem;
+		transition: all 0.2s ease;
+	}
+
+	.stack-icon:hover {
+		background: rgba(212, 165, 116, 0.1);
+		border-color: rgba(212, 165, 116, 0.25);
+	}
+
+	/* ====================
+	   Future Tile
+	   ==================== */
+	.future-tile {
+		background: linear-gradient(145deg, rgba(42, 42, 42, 0.6) 0%, rgba(18, 18, 18, 0.8) 100%);
+		border-style: dashed;
+	}
+
+	.future-content {
+		display: flex;
+		flex-direction: column;
+		align-items: center;
+		justify-content: center;
+		height: 100%;
+		gap: 0.75rem;
+	}
+
+	.dots-loader {
+		display: flex;
+		gap: 0.375rem;
+	}
+
+	.dots-loader span {
+		width: 5px;
+		height: 5px;
+		background: rgba(212, 165, 116, 0.5);
+		border-radius: 50%;
+		animation: dots 1.4s ease-in-out infinite;
+	}
+
+	.dots-loader span:nth-child(1) { animation-delay: 0s; }
+	.dots-loader span:nth-child(2) { animation-delay: 0.2s; }
+	.dots-loader span:nth-child(3) { animation-delay: 0.4s; }
+
+	@keyframes dots {
+		0%, 80%, 100% { transform: scale(0.6); opacity: 0.3; }
+		40% { transform: scale(1); opacity: 1; }
+	}
+
+	.future-text {
+		font-family: 'JetBrains Mono', monospace;
+		font-size: 0.7rem;
+		color: #737373;
+		text-align: center;
+		line-height: 1.4;
+	}
+
+	/* ====================
+	   Connect Tile
+	   ==================== */
+	.connect-title {
+		font-size: 0.85rem;
+		font-weight: 600;
+		color: #ffffff;
+		margin-bottom: 0.5rem;
+	}
+
+	.connect-links {
+		display: flex;
+		flex-direction: column;
+		gap: 0.375rem;
+	}
+
+	.connect-link {
+		display: flex;
+		align-items: center;
+		gap: 0.5rem;
+		padding: 0.5rem;
+		background: rgba(212, 165, 116, 0.05);
+		border: 1px solid rgba(212, 165, 116, 0.1);
+		border-radius: 6px;
+		color: #e5e5e5;
+		text-decoration: none;
+		font-family: 'JetBrains Mono', monospace;
+		font-size: 0.65rem;
+		transition: all 0.2s ease;
+	}
+
+	.connect-link:hover {
+		background: rgba(212, 165, 116, 0.1);
+		border-color: rgba(212, 165, 116, 0.25);
+		transform: translateX(2px);
+	}
+
+	.connect-link svg {
+		flex-shrink: 0;
+	}
+
+	/* ====================
+	   Animations
+	   ==================== */
+	@keyframes slideUp {
+		0% {
+			opacity: 0;
+			transform: translateY(20px);
+		}
+		100% {
+			opacity: 1;
+			transform: translateY(0);
+		}
+	}
+
+	/* ====================
+	   Responsive Design
+	   ==================== */
+	@media (max-width: 1024px) {
+		.bento-container {
+			height: auto;
+			max-height: none;
+			overflow: visible;
+		}
+
+		.bento-grid {
+			grid-template-columns: repeat(2, 1fr);
+			grid-template-rows: auto;
+			gap: 1rem;
+		}
+
+		.hero-tile {
+			grid-column: span 2;
+			grid-row: auto;
+		}
+
+		.epicor-tile {
+			grid-column: span 2;
+			grid-row: auto;
+		}
+
+		.opexio-tile {
+			grid-row: span 1;
+		}
+	}
+
+	@media (max-width: 640px) {
+		.bento-container {
+			padding: 1rem;
+		}
+
+		.bento-grid {
+			grid-template-columns: 1fr;
+			gap: 0.75rem;
+		}
+
+		.bento-tile {
+			grid-column: span 1 !important;
+		}
+
+		.title-primary,
+		.title-secondary {
+			font-size: 1.75rem;
+		}
+
+		.hero-title {
+			flex-direction: row;
+			gap: 0.375rem;
+		}
+
+		.expertise-body {
+			flex-direction: column;
+			gap: 1rem;
+		}
+
+		.years-number {
+			font-size: 2.25rem;
+		}
+	}
+</style>

@@ -1,5 +1,6 @@
 ---
-
+import BentoGrid from '../components/BentoGrid.astro';
+import '../styles/global.css';
 ---
 
 <html lang="en">
@@ -7,11 +8,64 @@
 		<meta charset="utf-8" />
 		<link rel="icon" type="image/svg+xml" href="/favicon.svg" />
 		<link rel="icon" href="/favicon.ico" />
-		<meta name="viewport" content="width=device-width" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
 		<meta name="generator" content={Astro.generator} />
-		<title>Astro</title>
+		<title>Indra Arga Muria | Senior Epicor Technical Architect</title>
+
+		<!-- Fonts -->
+		<link rel="preconnect" href="https://fonts.googleapis.com">
+		<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+		<link href="https://fonts.googleapis.com/css2?family=JetBrains+Mono:wght@400;500;600&family=Space+Grotesk:wght@400;500;600;700&display=swap" rel="stylesheet">
 	</head>
 	<body>
-		<h1>Astro</h1>
+		<BentoGrid />
 	</body>
 </html>
+
+<style is:global>
+	* {
+		margin: 0;
+		padding: 0;
+		box-sizing: border-box;
+	}
+
+	html, body {
+		height: 100%;
+		overflow: hidden;
+	}
+
+	html {
+		scroll-behavior: smooth;
+	}
+
+	body {
+		font-family: 'Space Grotesk', sans-serif;
+		background-color: #0a0a0a;
+		color: #ffffff;
+		overflow-x: hidden;
+	}
+
+	/* Subtle grid background */
+	body::before {
+		content: '';
+		position: fixed;
+		top: 0;
+		left: 0;
+		right: 0;
+		bottom: 0;
+		background-image:
+			linear-gradient(rgba(212, 165, 116, 0.03) 1px, transparent 1px),
+			linear-gradient(90deg, rgba(212, 165, 116, 0.03) 1px, transparent 1px);
+		background-size: 60px 60px;
+		pointer-events: none;
+		z-index: 0;
+	}
+
+	/* Allow scrolling on smaller screens */
+	@media (max-width: 1024px) {
+		html, body {
+			overflow: auto;
+			height: auto;
+		}
+	}
+</style>
