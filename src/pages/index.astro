@@ -47,7 +47,7 @@ import '../styles/global.css';
 	}
 
 	[data-theme="light"] body {
-		background-color: #f5f5f5;
+		background-color: #ffffff;
 		color: #1a1a1a;
 	}
 
@@ -65,6 +65,12 @@ import '../styles/global.css';
 		background-size: 60px 60px;
 		pointer-events: none;
 		z-index: 0;
+	}
+
+	[data-theme="light"] body::before {
+		background-image:
+			linear-gradient(rgba(0, 0, 0, 0.03) 1px, transparent 1px),
+			linear-gradient(90deg, rgba(0, 0, 0, 0.03) 1px, transparent 1px);
 	}
 
 	/* Allow scrolling on smaller screens */
